@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Visiting Yucatan</title>
+</head>
+
+<body>
+    <main>
+    <!--this is large screen nav bar-->
+        <nav>
+            <div class="navbar">
+            
+                <a href="#one">Mayan Ruins</a>
+                <a href="#two">Cenotes</a>
+                <a href="#three">Merida</a>
+                <a href="#four">Sign Up</a>
+            
+            </div>
+        </nav>
+        <!--this is mobile nav bar-->
+        <div class="mobilenav">
+            <a href="#landing" class="active">Visiting Yucatan</a>
+       
+              <div id="navLinks">
+                <a href="#one">Mayan Ruins</a>
+                <a href="#two">Cenotes</a>
+                <a href="#three">Merida</a>
+                <a href="#four">Sign Up</a>
+                 
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myNav()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+
+
+            <!--Header-->
+<div id="landing">
+
+    <h1>Explore Yucatan</h1>
+</div>
+<div class="flex-container">
+<p class="intro">The Yucatan has so many attractions to offer! Check out some of the region's most popular activities and attractions below!</p>
+    <div class="flex-child">
+    <section id="one">
+    <div class="images"><img src=https://source.unsplash.com/hpC8h942zhk></div>
+    <h2>Mayan Ruins</h2>
+        <p class="description">
+            Lorem  juhuigi ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
+            Etiam congue porttitor mattis. Donec ullamcorper interdum elit. Donec faucibus semper porta.
+        </p>
+    </section>
+</div>
+
+<div class="flex-child">
+    <section id="two">
+        <div class="images"><img src="https://source.unsplash.com/UrsIDtdBDVQ"></div>
+        <h2>Cenotes</h2>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
+                Etiam congue porttitor mattis. Donec ullamcorper interdum elit. Donec faucibus semper porta.
+            </p>
+    </section>
+</div>
+
+<div class="flex-child">
+    <section id="three">
+    <div class="images"><img src= "https://source.unsplash.com/jlrhWWZ_qu8"></div>
+    <h2>Merida</h2>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
+            Etiam congue porttitor mattis. Donec ullamcorper interdum elit. Donec faucibus semper porta.
+        </p>
+</section>
+</div>
+
+
+<div class="flex-child">
+    <section id="three">
+    <div class="images"><img src= "https://source.unsplash.com/z7UN-MF4y1I"></div>
+    <h2>Pink Lakes</h2>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
+            Etiam congue porttitor mattis. Donec ullamcorper interdum elit. Donec faucibus semper porta. 
+        </p>
+</section>
+</div>
+
+
+<div class="flex-child">
+    <section id="three">
+    <div class="images"><img src= "https://source.unsplash.com/JlL1GumRqJ4"></div>
+    <h2>Yellow City</h2>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
+            Etiam congue porttitor mattis. Donec ullamcorper interdum elit. Donec faucibus semper porta. 
+        </p>
+</section>
+</div>
+</div>
+
+
+
+
+
+
+<!--Random Location Generator-->
+<div class="ran_gen">
+<h3 class="randomgen_h3">Can't decide which attraction to explore first? Let us choose for you!</h3>
+<p class="click_here">Click Button Below!</p>
+<input class="submit_btn" type="button" value="Here!" onclick="randomAttractionGenerator()">
+</div>
+
+<section id="four">
+    <form class="form" action=" " method="post"  id="newsletter-form">
+
+<!-- Form-->
+<div class="sign_up">
+<h3>Sign Up for Our Newsletter!</h3>    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br>
+    </div>
+
+<!-- Button -->
+  <input class="submit_btn" type="button" value="Submit" onclick="myFunction();">
+</form>
+</section>
+
+</main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
+* {
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+#landing {
+background: url(https://source.unsplash.com/ub1sSvJ_Tbs);
+display: flex;
+flex: 0 1 40vw;
+height: 60vh;
+align-items: center;
+text-align: center;
+background-position: center;
+justify-content: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+
+/*Mobile Nav*/
+
+.mobilenav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .mobilenav #navLinks {
+    display: none;
+    font-size: 20px;
+  }
+  
+  .mobilenav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+  
+  .mobilenav a.icon {
+    background: yellow;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .mobilenav a:hover {
+    background-color: yellow;
+    color: rgb(24, 44, 24);
+  }
+  
+  .active {
+    background-color: rgb(24, 44, 24);;
+    color: green;
+  }
+  
+  .mobilenav {display: block;}
+  .navbar {display: none;}
+
+  body {
+    background-color: rgb(24, 44, 24);
+    }
+    
+    header {
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+    }
+    
+    h1 {
+        color: white;
+        position: center;
+        font-size: 100px;
+        padding: 10px;
+    }
+    
+    h2{
+        margin-top: -15px;
+        padding: 20px 10px 20px 10px;
+        text-align: center;
+        background-color: rgb(255, 255, 0);
+       
+    }
+    
+    .randomgen_h3 {
+      text-align: center;
+      color: yellow;
+      padding-top: 50px;
+    }
+
+    .submit_btn {
+     background:green;
+     color:yellow;
+     border-style:outset;
+     border-color:black;
+     height:35px;
+     width:100px;
+     font:bold15px arial,sans-serif;
+     text-shadow:none;
+    }
+
+    .intro {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .sign_up {
+      padding-top: 50px;
+    }
+    
+    .ran_gen{
+      text-align: center;
+    }
+
+    p{
+        color: yellow;
+        text-align: center;
+        }
+    
+    img {
+        border-radius: 100%;
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #four {
+        text-align: center;
+        color: yellow;
+    }
+    
+
+
+/* Media Query #1*/
+
+@media screen and (min-width: 801px) {
+.mobilenav {display: none;}
+.navbar {display: inline-block;}
+
+    nav {
+        background: rgb(24, 44, 24);;
+        overflow: hidden;
+      }
+
+      nav a {
+        float: right;
+        color: yellow;
+        text-align: center;
+        padding: 20px;
+        font-size: 10px;
+      }
+
+      .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      
+      .flex-child {
+
+        width: 30%;
+        padding-left: 25px;
+        text-align: center;
+      }
+
+      .flex-container h2 {
+
+        text-align: center;
+      }
+
+      nav li {
+        display: inline-block;
+        list-style: none;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+      }
+      
+      nav li:hover {
+        background: rgb(139, 139, 14);
+      }
+      
+      .navbar {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      img {
+          max-width: 100%;
+          height: auto;
+            border-radius: 100%;
+            margin-top: 30px;
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+      }
+    
+}
+
+
+/*Media Query 2*/
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .mobilenav {display: none;}
+  .navbar {display: inline-block;}
+     
+     
+  nav {
+      overflow: hidden;
+           }
+     
+  nav a {
+    float: right;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+  }
+     
+   nav a:hover {
+          background-color: rgba(95, 81, 126, 0.34);
+       text-decoration: none;
+      }
+     
+  .flex-container {
+       display: flex;
+       flex-wrap: wrap;
+      justify-content: center;
+     
+  }
+  
+  .flex-child {
+      width: 35%;
+      padding-left: 25px;
+      text-align: center;  
+      }  
+
+      img {
+        max-width: 100%;
+        height: auto;
+
+    }
+     
+  }
+  
