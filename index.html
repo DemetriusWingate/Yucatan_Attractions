@@ -121,23 +121,31 @@
 <input class="submit_btn" type="button" value="Here!" onclick="randomAttractionGenerator()">
 </div>
 
+
 <section id="four">
     <form class="form" action=" " method="post"  id="newsletter-form">
 
 <!-- Form-->
 <div class="sign_up">
 <h3>Sign Up for Our Newsletter!</h3>    
-        <label for="name">Name:</label>
+        <!--<label for="name">Name:</label>
         <input type="text" id="name" name="name">
         <br>
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
-        <br>
+        <input type="text" id="email" name="email" onsubmit="return validate();" method="get">
+        <br>-->
+
+        <div>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br>
+            <input type="email" name="" id="email" placeholder="Enter your email" onclick="formValidate()">
+            <br>
+          </div>
+
     </div>
 
-<!-- Button -->
-  <input class="submit_btn" type="button" value="Submit" onclick="myFunction();">
-</form>
+<!--Button-->
+  <input class="submit_btn" type="button" value="Submit" onclick="formValidate();">
 </section>
 
 </main>
