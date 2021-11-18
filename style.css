@@ -83,8 +83,10 @@ background-repeat: no-repeat;
         background-color: rgb(255, 255, 0);
        
     }
+
     
-    .randomgen_h3 {
+    
+    .randomgen_h3, h3 {
       text-align: center;
       color: yellow;
       padding-top: 50px;
@@ -101,6 +103,11 @@ background-repeat: no-repeat;
      text-shadow:none;
     }
 
+    #newsletter_btn {
+        text-align: center;
+        padding-top: 20px;
+    }
+
     .intro {
       padding-top: 40px;
       padding-bottom: 40px;
@@ -110,11 +117,12 @@ background-repeat: no-repeat;
       padding-top: 50px;
     }
     
-    .ran_gen{
+
+    .ran_gen, .converter {
       text-align: center;
     }
 
-    p{
+    p, form, .sign_up {
         color: yellow;
         text-align: center;
         }

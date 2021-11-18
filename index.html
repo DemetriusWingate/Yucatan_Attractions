@@ -49,7 +49,7 @@
     <div class="flex-child">
     <section id="one">
     <div class="images"><img src=https://source.unsplash.com/hpC8h942zhk></div>
-    <h2>Mayan Ruins</h2>
+    <h2>Mayan Ruins<br>$30.00 USD</h2>
         <p class="description">
             Lorem  juhuigi ipsum dolor sit amet, consectetur adipiscing elit. 
             Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
@@ -61,7 +61,7 @@
 <div class="flex-child">
     <section id="two">
         <div class="images"><img src="https://source.unsplash.com/UrsIDtdBDVQ"></div>
-        <h2>Cenotes</h2>
+        <h2>Cenotes<br>$45.00 USD</h2>
             <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
@@ -73,7 +73,7 @@
 <div class="flex-child">
     <section id="three">
     <div class="images"><img src= "https://source.unsplash.com/jlrhWWZ_qu8"></div>
-    <h2>Merida</h2>
+    <h2>Merida<br>$50.00 USD</h2>
         <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
@@ -86,7 +86,7 @@
 <div class="flex-child">
     <section id="three">
     <div class="images"><img src= "https://source.unsplash.com/z7UN-MF4y1I"></div>
-    <h2>Pink Lakes</h2>
+    <h2>Pink Lakes<br>$25.00 USD</h2>
         <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
@@ -99,7 +99,7 @@
 <div class="flex-child">
     <section id="three">
     <div class="images"><img src= "https://source.unsplash.com/JlL1GumRqJ4"></div>
-    <h2>Yellow City</h2>
+    <h2>Yellow City<br>$20.00 USD</h2>
         <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nunc blandit vestibulum cursus. In elementum massa eu nibh elementum pretium. 
@@ -122,31 +122,47 @@
 </div>
 
 
-<section id="four">
-    <form class="form" action=" " method="post"  id="newsletter-form">
+<!--USD Converter-->
+
+<h3>All prices above are listed in USD. Don't forget to convert to the MXN Peso below!</h3>
+<br>
+    <form action="" id="converter">
+      Amount:
+      <input type="number" min="0" name="amount" placeholder="Enter Attraction Cost">
+      From:
+      <select name="from">
+        <option value="USD">USD</option>
+        <option value="MXN">MXN</option>
+      </select>
+      To:
+      <select name="to">
+        <option value="USD" selected>USD</option>
+        <option value="MXN">MXN</option>
+      </select><br>
+      <input class="submit_btn" type="submit" value="Convert">
+    </form>
+    <p id="output"></p>
+    
+
+    
 
 <!-- Form-->
 <div class="sign_up">
 <h3>Sign Up for Our Newsletter!</h3>    
-        <!--<label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <br>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" onsubmit="return validate();" method="get">
-        <br>-->
-
         <div>
             <input type="text" name="name" id="name" placeholder="Enter your name">
             <br>
-            <input type="email" name="" id="email" placeholder="Enter your email" onclick="formValidate()">
+            <input type="email" name="" id="email" placeholder="Enter your email">
             <br>
           </div>
 
     </div>
 
 <!--Button-->
+<div id="newsletter_btn">
   <input class="submit_btn" type="button" value="Submit" onclick="formValidate();">
 </section>
+</div>
 
 </main>
     <script src="main.js"></script>

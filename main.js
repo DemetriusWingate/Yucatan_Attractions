@@ -8,22 +8,8 @@
         }
       }
   
-  
-  /*this function validates the form*/
-  
-  /*function myFunction () {
-      var x=document.getElementById('name').value;
-      if (x == "") {
-      alert ("You didn't tell us your name!");
-          return false;
-       } else {
-      alert ("Thanks, " + x + " for signing up for our newsletter!");
-      }
-      }*/
 
-
-
-      /* Trip Generator*/
+      /* Random Attraction Generator*/
   function randomAttractionGenerator() {
     const attractions = [
       "Pink Lakes",
@@ -47,3 +33,34 @@
       else 
           alert('email not valid!');
   }
+
+  /*USD to MXN Converter*/
+
+  const objectFromEntries = entries => [...entries]
+  .reduce((obj, [key, val]) => ({ ...obj, [key]: val }), {})
+
+const formToObject = form => objectFromEntries(new FormData(form).entries())
+
+// rates & conversion equation as of 11-17-2021
+
+const rates = {
+  USD: 20.69,
+  MXN: 1,
+}
+
+const convert = (amount, from, to) => rates[from] / rates[to] * amount
+
+// pulling from the DOM here
+
+const output = document.getElementById('output')
+
+document
+  .getElementById('converter')
+  .addEventListener('submit', event => {
+    event.preventDefault()
+ 
+    const { amount, from, to } = formToObject(event.target)
+    const result = convert(amount, from, to)
+    
+    output.textContent = `${amount} ${from} = ${result.toFixed(2)} ${to}`
+  })
